@@ -1,10 +1,12 @@
 import './App.css';
+import WelcomeMessage from "./WelcomeMessage";
+import AppLayout from "./AppLayout";
 
 function App() {
   return (
-      <div className="App">
-        Welcome to CryptoBash
-      </div>
+      <AppLayout>
+        <WelcomeMessage/>
+      </AppLayout>
   );
 }
 
