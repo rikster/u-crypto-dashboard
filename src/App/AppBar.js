@@ -11,13 +11,14 @@ const Logo = styled.div`
 
 const Bar = styled.div`
   display: grid; // css grid
+  margin-bottom 40px;
   grid-template-columns: 180px auto 100px 100px;
 `;
 
 const ControlButtonElem = styled.div`
   cursor: pointer;
   ${props => props.active && css`
-    color: blue;  
+    text-shadow: 0px 0px 60px #03ff03;
   `
   }
 `
@@ -25,9 +26,13 @@ const ControlButtonElem = styled.div`
 function ControlButton({name, active}) {
     return(
         <ControlButtonElem active={active}>
-            {name}
+            {toProperCase(name)}
         </ControlButtonElem>
     )
+}
+
+function toProperCase(lower) {
+    return lower.charAt(0).toUpperCase() + lower.substr(1);
 }
 
 export default function () {
@@ -35,8 +40,8 @@ export default function () {
     <Bar>
       <Logo>CryptoDash</Logo>
       <div></div>
-      <ControlButton active name="Dashboard"></ControlButton>
-      <ControlButton name="settings">Settings</ControlButton>
+      <ControlButton active name="dashboard"></ControlButton>
+      <ControlButton name="settings"></ControlButton>
     </Bar>
   );
 }
