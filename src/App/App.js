@@ -1,13 +1,15 @@
-import './App.css';
+import "./App.css";
 import WelcomeMessage from "./WelcomeMessage";
 import AppLayout from "./AppLayout";
-import styled, {css} from 'styled-components';
+import styled, { css } from "styled-components";
+import AppBar from "./AppBar";
 
 function App() {
   return (
-      <AppLayout>
-        <WelcomeMessage/>
-      </AppLayout>
+    <AppLayout>
+      <AppBar />
+      <WelcomeMessage />
+    </AppLayout>
   );
 }
 
