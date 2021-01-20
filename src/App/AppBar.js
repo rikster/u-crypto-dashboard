@@ -43,7 +43,7 @@ function toProperCase(lower) {
 export default function () {
   return (
     <Bar>
-      <Logo>CryptoDash</Logo>
+      <Logo>CryptoBash</Logo>
       <div></div>
       <ControlButton active name="dashboard"></ControlButton>
       <ControlButton name="settings"></ControlButton>

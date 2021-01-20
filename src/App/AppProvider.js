@@ -1,4 +1,6 @@
 import React from "react";
+import cc from 'cryptocompare'
+cc.setApiKey('')
 
 export const AppContext = React.createContext();
 
@@ -12,6 +14,18 @@ export class AppProvider extends React.Component {
       confirmFavourites: this.confirmFavourites,
     };
   }
+
+
+  componentDidMount = () => {
+    this.fetchCoins();
+  }
+
+  fetchCoins = async () => {
+    let coinList = (await cc.coinList()).Data;
+    //console.log(cointList);
+    this.setState({coinList})
+  }
+
 
   confirmFavourites = () => {
     this.setState({
