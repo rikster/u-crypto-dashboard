@@ -35,7 +35,7 @@ export class AppProvider extends React.Component {
     localStorage.setItem(
       "cryptoDash",
       JSON.stringify({
-        test: "hello",page
+        test: "hello",
       })
     );
   };
