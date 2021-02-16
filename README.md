@@ -7,11 +7,24 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Styled Components
 - wouldnt normally use this, has some advantages
+  - real css, re-usable, variables, logic (if then)  
+    although autogen component naming is ugly, and a little hard to debug,
+    and it mixes js w/ css (no SOC)
+  - vs importing .css
+    - classes must be carefully named b/c they get injected by webpack index.js, 
+      therefore globally scoped
+  - vs BEM (Block Element Modifier)
+    - still added globally
+  - vs css modules are cleaner
+    - build time transforms css files into js (webpack)
+    - eg. import classes from button.module.css, therefore classes.button 
+- Why you should look into these React component styling options! 
+  - https://www.youtube.com/watch?v=NMiEREulVLc
 
 CSS Grid
 
 React Context API
- - vs Redux?
+ - vs Redux
 
 HighCharts
 
