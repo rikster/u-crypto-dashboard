@@ -6,22 +6,27 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Styled Components
+- wouldnt normally use this, has some advantages
 
 CSS Grid
 
 React Context API
+ - vs Redux?
 
 HighCharts
 
 CryptoCompare API
+ - seems pretty good
+ - and free (low traffic)
 
 Moment : Date Manipulation
 
 Lodash : Functional Programming
+ - great w/ arrays/collections
 
 localStorage : Save Coins
 
-## Description (Readme Driven Dev)
+## Description
 Settings Page with Intro greeting
 
 Greeting the user on first visit, asking them to choose their favorites
